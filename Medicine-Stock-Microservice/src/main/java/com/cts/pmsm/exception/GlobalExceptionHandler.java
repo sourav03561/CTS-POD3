@@ -16,7 +16,7 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 	@ExceptionHandler(MedicineStockNotFoundException.class)
 	public ResponseEntity<String> handleMedicineStockNotFoundException(MedicineStockNotFoundException ex){
 		
-		return new ResponseEntity<>(ex.getMessage(),HttpStatus.UNAUTHORIZED);
+		return new ResponseEntity<>(ex.getMessage(),HttpStatus.NOT_FOUND);
 	}
 	
 }
