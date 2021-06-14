@@ -96,5 +96,6 @@
 		<module>
 			PSMS-Medical-Representative-Schedule-Microservice
 		</module>
+		<module>PSMS-Pharmacy-Medicine-Supply-Microservice</module>
 	</modules>
 </project>
