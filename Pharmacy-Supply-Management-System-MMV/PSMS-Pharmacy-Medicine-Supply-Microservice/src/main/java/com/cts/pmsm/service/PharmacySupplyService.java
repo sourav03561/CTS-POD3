@@ -1,0 +1,16 @@
+package com.cts.pmsm.service;
+
+import java.util.List;
+
+import com.cts.pmsm.exception.AuthorizationException;
+import com.cts.pmsm.model.MedicineDemand;
+import com.cts.pmsm.model.PharmacyMedicineSupply;
+
+public interface PharmacySupplyService {
+
+	public List<PharmacyMedicineSupply> getPharmacySupplyFromService(List<MedicineDemand> medicineDemand,String token) throws AuthorizationException;
+	
+	public List<MedicineDemand> getAllDemand(String token);
+	
+	public List<PharmacyMedicineSupply> getAllSupply(String token);
+}
