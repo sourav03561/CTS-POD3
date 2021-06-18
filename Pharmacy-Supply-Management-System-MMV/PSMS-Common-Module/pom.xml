@@ -6,6 +6,13 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>PSMS-Common-Module</artifactId>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
+  
   <name>PSMS-Common-Module</name>
+  <dependencies>
+  <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+  </dependencies>
 </project>
